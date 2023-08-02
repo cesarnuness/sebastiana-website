@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>::Escola Sebastiana::</title>
+  </head>
+  <body class="bg-cor-fundo">
+    <!-- Nav container -->
+    <div class="container w-screen max-w-2xl mx-auto">
+      <!-- Navbar -->
+      <nav class="flex lg:justify-between items-center justify-evenly">
+        <!-- Logo -->
+        <img class="h-12 w-12 md:mx-6 md:my-4 md:h-20 md:w-20" src="/logo/logo.png" alt="" />
+        <!-- Menu container -->
+        <div class="wrapper flex flex-col items-center justify-center relative">
+          <!-- Título md+  -->
+          <h1 class="hidden md:block font-semibold md:text-xl text-cor-primaria mt-10">
+            <a href="./index.html">Profª. Sebastiana Valdiria Pereira da Silva</a>
+          </h1>
+
+          <!-- Menu -->
+          <div class="hidden h-10 md:flex md:space-x-12 text-cor-primaria mt-4">
+            <div class="group">
+              <a href="./views/blog.html">Blog</a>
+              <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+            </div>
+            <div class="group">
+              <a href="./views/simulados.html">Simulados</a>
+              <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+            </div>
+            <div class="group">
+              <a href="./views/galeria.html">Galeria</a>
+              <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+            </div>
+            <div class="group">
+              <a href="./views/equipe.html">Equipe</a>
+              <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+            </div>
+            <div class="group">
+              <a href="./views/contato.html">Contato</a>
+              <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Título -->
+        <h1 class="md:hidden text-sm font-semibold md:text-base text-cor-primaria mx-auto">
+          <a href="./index.html">Profª. Sebastiana Valdiria</a>
+        </h1>
+        <!-- Hamburger Button -->
+        <button id="menu-btn" type="button" class="block hamburger md:hidden focus:outline-none mr-2 z-50">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </nav>
+      <!--  Mobile Menu -->
+      <div id="menu" class="absolute hidden p-6 rounded-lg left-6 right-6 top-6 z-20 text-sm">
+        <div class="flex items-center justify-center w-full font-light text-cor-primaria rounded-sm">
+          <a class="text-cor-primaria mx-1 text-xs font-semibold w-fit" href="./views/recados.html">Blog</a>
+          <a class="text-cor-primaria mx-1 text-xs font-semibold w-fit" href="./views/simulado.html">Simulado</a>
+          <a class="text-cor-primaria mx-1 text-xs font-semibold w-fit" href="./views/galeria.html">Galeria</a>
+          <a class="text-cor-primaria mx-1 text-xs font-semibold w-fit" href="./views/equipe.html">Equipe</a>
+          <a class="text-cor-primaria mx-1 text-xs font-semibold w-fit" href="./views/contato.html">Contato</a>
+        </div>
+      </div>
+    </div>
+    <section id="hero">
+      <img class="hidden md:flex" src="public/images/familia.jpg" alt="" srcset="" />
+    </section>
+    <footer class="bg-cor-fundo">
+      <!-- Container -->
+      <div class="container max-w-6xl py-10 mx-auto">
+        <!-- Footer flex container -->
+        <div class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start">
+          <!-- Menu & Logo container -->
+          <div class="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
+            <!-- Logo -->
+            <div class="flex items-center justify-center">
+              <img class="h-8" src="./logo/logo.png" alt="" class="w-44 md:ml-3" />
+              <h1 class="hidden md:block font-semibold md:text-xl text-cor-primaria ml-4">
+                <a href="./index.html">Profª. Sebastiana Valdiria Pereira da Silva</a>
+              </h1>
+            </div>
+            <!-- Menu container -->
+            <div class="flex flex-col items-center space-y-4 font-bold text-cor-secundaria md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
+              <!-- Item 1 -->
+              <div class="h-10 group">
+                <a href="#">Blog</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              </div>
+              <!-- Item 2 -->
+              <div class="h-10 group">
+                <a href="#">Simulado</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              </div>
+              <!-- Item 3 -->
+              <div class="h-10 group">
+                <a href="#">Galeria</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              </div>
+              <!-- Item 4 -->
+              <div class="h-10 group">
+                <a href="#">Equipe</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              </div>
+              <!-- Item 5 -->
+              <div class="h-10 group">
+                <a href="#">Contato</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Social & Copy Container -->
+          <div class="flex flex-col items-start justify-between space-y-4 text-gray-500">
+            <!-- Icons container -->
+            <div class="flex items-center mx-auto md:mx-0 justify-center space-x-4 md:justify-end">
+              <!-- Icon 1 -->
+              <div class="h-8 group">
+                <img src="./icons/facebook.svg" alt="" class="h-6" />
+              </div>
+              <!-- Icon 2 -->
+              <div class="h-8 group">
+                <img src="./icons/instagram.svg" alt="" class="h-6" />
+              </div>
+              <!-- Icon 3 -->
+              <div class="h-8 group">
+                <img src="./icons/whatsapp.svg" alt="" class="h-6" />
+              </div>
+              <!-- Icon 4 -->
+              <div class="h-8 group">
+                <img src="./images/icon-twitter.svg" alt="" class="h-6" />
+              </div>
+            </div>
+            <!-- Copyright -->
+            <div class="font-bold">&copy; 2023 Proatec. Todos os direitos reservados</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
