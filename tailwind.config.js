@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "./*.html"],
   theme: {
     extend: {
       colors: {
@@ -10,9 +10,6 @@ export default {
           fundo: "#f3f4ed" /* Bege */,
           texto: "#333333" /* Preto */,
         },
-      },
-      fontFamily: {
-        sans: ["Poppins", "sans-serif"],
       },
     },
   },
