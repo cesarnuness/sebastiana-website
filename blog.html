@@ -68,16 +68,16 @@
         </div>
       </div>
     </div>
-    <section id="blog">
+    <section class="bg-gradient-to-r from-amber-50 to-amber-100" id="blog">
       <!-- Título -->
-      <div class="mt-20 p-20 border-4 border-cor-primaria border-b-2">
+      <div class="mt-5 p-5 md:mt-20 md:p-20 border-4 border-cor-primaria border-b-2">
         <h1 class="text-cor-primaria md:text-6xl md:text-left text-center text-4xl font-bold">BLOG SEBASTIANA</h1>
       </div>
 
       <!-- Container Geral -->
       <div class="flex">
         <!-- Container fotos -->
-        <div class="flex-col w-3/4 bg-amber-50 overflow-hidden border-2 border-cor-primaria shadow-lg">
+        <div class="w-full flex-col md:w-3/4 bg-amber-50 overflow-hidden border-2 border-cor-primaria shadow-lg border-r-4">
           <!-- Post 1 -->
           <div class="group relative m-4 bg-amber-200 h-fit rounded-3xl">
             <img class="hover:scale-105 transition duration-150" src="./images/desktop/jardim.jpg" alt="" />
@@ -86,7 +86,7 @@
             >
               <div class="pl-5 pt-4">
                 <h1 class="text-red-500 text-2xl">Jardim</h1>
-                <p class="font-semibold text-base text-zinc-600">
+                <p class="font-semibold text-xs lg:text-base text-zinc-600">
                   Conectando a natureza ao aprendizado: Celebramos a inauguração do encantador jardim escolar, inspire-se junto conosco!
                 </p>
               </div>
@@ -100,7 +100,7 @@
             >
               <div class="pl-5 pt-4">
                 <h1 class="text-red-500 text-2xl">Dia da Família</h1>
-                <p class="font-semibold text-base text-zinc-600">
+                <p class="font-semibold text-xs lg:text-base text-zinc-600">
                   Unidos pelo amor e carinho: Celebrando o Dia da Família, honramos quem cuida com amor incondicional.
                 </p>
               </div>
@@ -114,7 +114,7 @@
             >
               <div class="pl-5 pt-4">
                 <h1 class="text-red-500 text-2xl">Campeonatos</h1>
-                <p class="font-semibold text-base text-zinc-600">
+                <p class="font-semibold text-xs lg:text-base text-zinc-600">
                   Com esporte e disciplina, nossos alunos brilham no campeonato de futebol, mostrando o melhor de si!
                 </p>
               </div>
@@ -128,7 +128,7 @@
             >
               <div class="pl-5 pt-4">
                 <h1 class="text-red-500 text-2xl">Sustentabilidade</h1>
-                <p class="font-semibold text-base text-zinc-600">
+                <p class="font-semibold text-xs lg:text-base text-zinc-600">
                   Semear o futuro sustentável: Nossos alunos cultivam um ambiente mais verde e consciente, plantando flores com carinho.
                 </p>
               </div>
@@ -136,13 +136,18 @@
           </div>
         </div>
         <!-- Container Recados e datas -->
-        <div class="flex-col w-1/4 flex bg-amber-50">
-          <div class="flex-col h-2/4 border-2 border-cor-primaria b">
-            <div class="flex flex-col">
-              <h1></h1>
+        <div class="hidden flex-col w-1/4 md:flex bg-amber-50">
+          <div class="flex-col border-l-0 border-2 border-b-4 border-cor-primaria b">
+            <!-- Container 1 - Horários -->
+            <div class="flex h-screen flex-col mx-1 my-4 space-y-2">
+              <h2 class="text-red-700 text-2xl font-bold mx-auto mt-2">Horários</h2>
+              <p class="hidden mx-auto text-red-600 font-semibold">Horários</p>
+              <p class="mx-auto text-xs md:text-base font-semibold">Manhã: <span class="text-cor-primaria">7:00 e 11:50</span></p>
+              <p class="mx-auto text-xs md:text-base font-semibold">Tarde: <span class="text-cor-primaria">12:40 e 17:30</span></p>
             </div>
           </div>
-          <div class="flex-col h-2/4 border-2 border-cor-primaria"></div>
+          <!-- Container 2 - Salvo para necessidade @todo -->
+          <div class="hidden flex-col h-2/4 border-2 border-cor-primaria"></div>
         </div>
       </div>
     </section>

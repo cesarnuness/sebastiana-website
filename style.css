@@ -47,3 +47,8 @@
 .open .hamburger-bottom {
   transform: translateY(0px) rotate(-45deg) translateX(0px);
 }
+
+.color-conversion:hover {
+  /* Convert black to reddish-brown */
+  filter: sepia(100%) brightness(1.2);
+}
