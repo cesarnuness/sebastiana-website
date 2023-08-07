@@ -45,9 +45,9 @@ function handleHashChange() {
     case "galeria":
       renderContent(renderGaleria());
       break;
-    default:
-      renderContent(renderInicio());
-      break;
+    // default:
+    //   renderContent(renderInicio());
+    //   break;
   }
 }
 
