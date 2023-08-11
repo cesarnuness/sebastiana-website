@@ -1,196 +1,427 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>::Escola Sebastiana::</title>
   </head>
-  <body class="bg-amber-50 max-w-7xl mx-auto">
+  <body class="max-w-screen mx-auto bg-amber-50 md:max-w-7xl">
     <!-- Nav container -->
-    <div class="container w-screen max-w-2xl mx-auto">
+    <div class="container mx-auto w-screen max-w-2xl">
       <!-- Navbar -->
-      <nav class="flex lg:justify-between items-center justify-evenly mb-4">
+      <nav class="mb-4 flex items-center justify-evenly lg:justify-between">
         <!-- Logo -->
-        <img class="h-12 w-12 md:mx-6 md:my-4 md:h-20 md:w-20" src="/logo/logo.png" alt="" />
+        <img
+          class="h-12 w-12 md:mx-6 md:my-4 md:h-20 md:w-20"
+          src="/logo/logo.png"
+          alt=""
+        />
         <!-- Menu container -->
-        <div class="wrapper flex flex-col items-center justify-center relative">
+        <div class="wrapper relative flex flex-col items-center justify-center">
           <!-- Título md+  -->
-          <h1 class="hidden md:block font-semibold md:text-2xl text-cor-primaria mt-10">
-            <a href="./index.html">Profª. Sebastiana Valdiria Pereira da Silva</a>
+          <h1
+            class="mt-10 hidden font-semibold text-cor-primaria md:block md:text-2xl"
+          >
+            <a href="#inicio">Profª. Sebastiana Valdiria Pereira da Silva</a>
           </h1>
-
           <!-- Menu -->
-          <div class="hidden h-10 md:flex md:space-x-12 text-cor-primaria mt-4">
+          <div class="mt-4 hidden h-10 text-cor-primaria md:flex md:space-x-12">
             <div class="group">
-              <a href="./blog.html">Blog</a>
-              <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              <a id="btn--blog" href="#blog">Blog</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-cor-primaria"
+              ></div>
             </div>
             <div class="group">
               <a href="./simulados.html">Simulados</a>
-              <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-cor-primaria"
+              ></div>
             </div>
             <div class="group">
-              <a href="./galeria.html">Galeria</a>
-              <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              <a href="#galeria">Galeria</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-cor-primaria"
+              ></div>
             </div>
             <div class="group">
-              <a href="./equipe.html">Equipe</a>
-              <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              <a href="#equipe">Equipe</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-cor-primaria"
+              ></div>
             </div>
             <div class="group">
-              <a href="./contato.html">Contato</a>
-              <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              <a href="#contato">Contato</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-cor-primaria"
+              ></div>
             </div>
           </div>
         </div>
         <!-- Título -->
-        <h1 class="md:hidden text-xl font-semibold md:text-base text-cor-primaria mx-auto">
-          <a href="./index.html">Profª. Sebastiana Valdiria</a>
+        <h1
+          class="mx-auto text-xl font-semibold text-cor-primaria md:hidden md:text-base"
+        >
+          <a href="#inicio">Profª. Sebastiana Valdiria</a>
         </h1>
         <!-- Hamburger Button -->
-        <button id="menu-btn" type="button" class="block hamburger md:hidden focus:outline-none mr-8 mt-4 z-50">
+        <button
+          id="menu-btn"
+          type="button"
+          class="hamburger z-50 mr-8 mt-4 block focus:outline-none md:hidden"
+        >
           <span class="hamburger-top"></span>
           <span class="hamburger-middle"></span>
           <span class="hamburger-bottom"></span>
         </button>
       </nav>
       <!--  Mobile Menu -->
-      <div id="menu" class="absolute hidden p-6 rounded-lg left-6 right-6 top-6 z-20 text-sm">
-        <div class="flex items-center justify-center w-full font-light text-cor-primaria rounded-sm">
-          <a class="text-cor-primaria mx-1 text-xs font-semibold w-fit" href="./blog.html">Blog</a>
-          <a class="text-cor-primaria mx-1 text-xs font-semibold w-fit" href="./simulado.html">Simulado</a>
-          <a class="text-cor-primaria mx-1 text-xs font-semibold w-fit" href="./galeria.html">Galeria</a>
-          <a class="text-cor-primaria mx-1 text-xs font-semibold w-fit" href="./equipe.html">Equipe</a>
-          <a class="text-cor-primaria mx-1 text-xs font-semibold w-fit" href="./contato.html">Contato</a>
+      <div
+        id="menu"
+        class="absolute left-6 right-6 top-6 z-20 hidden rounded-lg p-6 text-sm"
+      >
+        <div
+          class="flex w-full items-center justify-center rounded-sm font-light text-cor-primaria"
+        >
+          <a
+            class="mx-1 w-fit text-xs font-semibold text-cor-primaria"
+            href="#blog"
+            >Blog</a
+          >
+          <a
+            class="mx-1 w-fit text-xs font-semibold text-cor-primaria"
+            href="simulados.html"
+            >Simulado</a
+          >
+          <a
+            class="mx-1 w-fit text-xs font-semibold text-cor-primaria"
+            href="#galeria"
+            >Galeria</a
+          >
+          <a
+            class="mx-1 w-fit text-xs font-semibold text-cor-primaria"
+            href="#equipe"
+            >Equipe</a
+          >
+          <a
+            class="mx-1 w-fit text-xs font-semibold text-cor-primaria"
+            href="#contato"
+            >Contato</a
+          >
         </div>
       </div>
     </div>
-    <section id="hero">
-      <img class="hidden lg:flex h-fit mx-auto w-screen" src="./images/desktop/familia.jpg" alt="" srcset="" />
-      <img class="lg:hidden w-fit mx-auto" src="/images/mobile/familia.jpg" alt="" srcset="" />
-    </section>
-    <!-- Container da seção de citação -->
-    <section id="citation" class="max-w-2xl mx-auto">
-      <!-- Borda de cima -->
-      <div class="border border-x-2 border-cor-primaria md:max-w-lg mt-10 mx-40 md:mx-24"></div>
-      <!-- citação -->
-      <div class="bg-amber-50 py-8 px-4">
-        <h2 class="text-4xl font-bold text-center text-cor-primaria mb-4">
-          "A escola é o lugar onde semeamos sonhos e colhemos realizações."
-        </h2>
-        <p class="text-center md:text-right text-red-400 font-bold mt-10">Darcy Ribeiro</p>
-      </div>
-      <!-- Borda de baixo -->
-      <div class="border border-x-2 border-cor-primaria mb-10 mx-48 shadow-2xl"></div>
-    </section>
-    <!-- Objetivo -->
-    <section id="objetivo">
-      <div class="bg-amber-50 py-8 px-4">
-        <h2 class="text-4xl font-bold text-center text-cor-primaria mb-4">
-          "A escola é o lugar onde semeamos sonhos e colhemos realizações."
-        </h2>
-        <p class="text-center md:text-right text-red-400 font-bold mt-10">Darcy Ribeiro</p>
-      </div>
-      <!-- Borda de baixo -->
-      <div class="border border-x-2 border-cor-primaria mb-10 mx-48 shadow-2xl"></div>
-    </section>
+    <main id="principal">
+      <section
+        class="bg-gradient-to-r from-amber-50 to-amber-100"
+        id="simulados"
+      >
+        <!-- Título -->
+        <div
+          class="mt-5 border-4 border-b-2 border-cor-primaria p-5 md:mt-20 md:p-20"
+        >
+          <h1
+            class="text-center text-4xl font-bold text-cor-primaria md:text-left md:text-6xl"
+          >
+            SIMULADOS
+          </h1>
+        </div>
 
-    <section class="grid grid-cols-2 mt-20 md:gap-10" id="valores">
-      <div class="flex flex-col md:flex-row items-center justify-center mx-10 rounded-lg space-y-6 col-span-2">
-        <img class="w-96 mx-10 rounded-3xl" src="/images/familia.jpg" alt="" />
-        <div class="self-start">
-          <h1 class="text-4xl text-center md:text-left text-red-600 font-bold">Família</h1>
-          <p class="mt-5 text-red-400 font-light">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit ab voluptatem sunt itaque quas odio vitae nesciunt odit? Ipsum
-            praesentium soluta sapiente ullam! Architecto libero dolorem officiis ex similique esse exercitationem sunt ut laborum ipsam
-            neque quisquam itaque dignissimos soluta nesciunt quae voluptatem iusto ratione, laudantium fugit, mollitia doloribus.
-            Inventore.
+        <!-- citação -->
+        <div class="bg-amber-50 px-4 py-8">
+          <h2 class="mb-4 text-center font-bold text-cor-primaria md:text-4xl">
+            "Assim como a maré testa a resistência das embarcações, as provas
+            testam a solidez do conhecimento."
+          </h2>
+          <p class="mt-4 text-center font-bold text-red-400 md:text-right">
+            Fernando Savater
           </p>
         </div>
-      </div>
-      <div class="flex flex-col md:flex-row-reverse items-center justify-center mx-10 rounded-lg space-y-6 col-span-2">
-        <img class="w-96 mx-10 rounded-3xl" src="/images/familia.jpg" alt="" />
-        <div class="self-start">
-          <h1 class="text-4xl text-center md:text-right text-red-600 font-bold">Família</h1>
-          <p class="mt-5 text-red-400 font-light">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit ab voluptatem sunt itaque quas odio vitae nesciunt odit? Ipsum
-            praesentium soluta sapiente ullam! Architecto libero dolorem officiis ex similique esse exercitationem sunt ut laborum ipsam
-            neque quisquam itaque dignissimos soluta nesciunt quae voluptatem iusto ratione, laudantium fugit, mollitia doloribus.
-            Inventore.
-          </p>
-        </div>
-      </div>
-    </section>
 
+        <!-- Container Geral -->
+        <div
+          class="mx-auto w-full flex-col items-center justify-center md:space-y-8"
+        >
+          <!-- Simulado 5 -->
+          <div
+            class="my-0 flex flex-col border border-cor-primaria bg-white md:grid md:grid-cols-3 md:place-items-center md:space-y-0"
+          >
+            <div
+              class="bg-red 50 flex flex-col border border-cor-primaria bg-zinc-50 py-4 md:border-none md:bg-white"
+            >
+              <h2 class="mx-auto my-3 text-lg font-bold text-cor-primaria">
+                Simulado 5
+              </h2>
+              <a
+                class="mx-auto cursor-pointer text-xs text-red-900 hover:text-red-300"
+                href="https://tinyurl.com/sebsimulado5"
+              >
+                Acesse aqui
+              </a>
+            </div>
+            <div
+              class="flex flex-col items-center border border-cor-primaria pb-4 md:border-none"
+            >
+              <h3 class="p-4 font-bold text-cor-primaria">Notas</h3>
+              <img
+                class="mx-auto mt-4 h-28"
+                src="./images/simulado/notas5.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col items-center justify-center p-4">
+              <h3 class="font-bold text-cor-primaria">Participação</h3>
+              <img
+                class="mx-auto my-8 h-28"
+                src="./images/simulado/participacao5.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Simulado 4 -->
+          <div
+            class="my-0 flex flex-col border border-cor-primaria bg-white md:grid md:grid-cols-3 md:place-items-center md:space-y-0"
+          >
+            <div
+              class="bg-red flex flex-col border border-cor-primaria bg-zinc-50 py-4 md:border-none md:bg-white"
+            >
+              <h2 class="mx-auto my-3 text-lg font-bold text-cor-primaria">
+                Simulado 4
+              </h2>
+              <a
+                class="mx-auto cursor-pointer text-xs text-red-900 hover:text-red-300"
+                href="https://tinyurl.com/sebsimulado4"
+              >
+                Acesse aqui
+              </a>
+            </div>
+            <div
+              class="flex flex-col items-center border border-cor-primaria pb-4 md:border-none"
+            >
+              <h3 class="p-4 font-bold text-cor-primaria">Notas</h3>
+              <img
+                class="mx-auto mt-4 h-28"
+                src="./images/simulado/notas4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col items-center justify-center p-4">
+              <h3 class="font-bold text-cor-primaria">Participação</h3>
+              <img
+                class="mx-auto my-8 h-28"
+                src="./images/simulado/participacao4.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Simulado 3 -->
+          <div
+            class="my-0 flex flex-col border border-cor-primaria bg-white md:grid md:grid-cols-3 md:place-items-center md:space-y-0"
+          >
+            <div
+              class="bg-red flex flex-col border border-cor-primaria bg-zinc-50 py-4 md:border-none md:bg-white"
+            >
+              <h2 class="mx-auto my-3 text-lg font-bold text-cor-primaria">
+                Simulado 3
+              </h2>
+              <a
+                class="mx-auto cursor-pointer text-xs text-red-900 hover:text-red-300"
+                href="https://tinyurl.com/sebsimulado3"
+              >
+                Acesse aqui
+              </a>
+            </div>
+            <div
+              class="flex flex-col items-center border border-cor-primaria pb-4 md:border-none"
+            >
+              <h3 class="p-4 font-bold text-cor-primaria">Notas</h3>
+              <img
+                class="mx-auto mt-4 h-28"
+                src="./images/simulado/notas3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col items-center justify-center p-4">
+              <h3 class="font-bold text-cor-primaria">Participação</h3>
+              <img
+                class="mx-auto my-8 h-28"
+                src="./images/simulado/participacao3.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Simulado 2 -->
+          <div
+            class="my-0 flex flex-col border border-cor-primaria bg-white md:grid md:grid-cols-3 md:place-items-center md:space-y-0"
+          >
+            <div
+              class="bg-red flex flex-col border border-cor-primaria bg-zinc-50 py-4 md:border-none md:bg-white"
+            >
+              <h2 class="mx-auto my-3 text-lg font-bold text-cor-primaria">
+                Simulado 2
+              </h2>
+              <a
+                class="mx-auto cursor-pointer text-xs text-red-900 hover:text-red-300"
+                href="https://tinyurl.com/sebsimulado2"
+              >
+                Acesse aqui
+              </a>
+            </div>
+            <div
+              class="flex flex-col items-center border border-cor-primaria pb-4 md:border-none"
+            >
+              <h3 class="p-4 font-bold text-cor-primaria">Notas</h3>
+              <img
+                class="mx-auto mt-4 h-28"
+                src="./images/simulado/notas2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col items-center justify-center p-4">
+              <h3 class="font-bold text-cor-primaria">Participação</h3>
+              <img
+                class="mx-auto my-8 h-28"
+                src="./images/simulado/participacao2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Simulado 1 -->
+          <div
+            class="my-0 flex flex-col border border-cor-primaria bg-white md:grid md:grid-cols-3 md:place-items-center md:space-y-0"
+          >
+            <div
+              class="bg-red flex flex-col border border-cor-primaria bg-zinc-50 py-4 md:border-none md:bg-white"
+            >
+              <h2 class="mx-auto my-3 text-lg font-bold text-cor-primaria">
+                Simulado 1
+              </h2>
+              <a
+                class="mx-auto cursor-pointer text-xs text-red-900 hover:text-red-300"
+                href="https://tinyurl.com/sebsimulado1"
+              >
+                Acesse aqui
+              </a>
+            </div>
+            <div
+              class="flex flex-col items-center border border-cor-primaria pb-4 md:border-none"
+            >
+              <h3 class="p-4 font-bold text-cor-primaria">Notas</h3>
+              <img
+                class="mx-auto mt-4 h-28"
+                src="./images/simulado/notas1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col items-center justify-center p-4">
+              <h3 class="font-bold text-cor-primaria">Participação</h3>
+              <img
+                class="mx-auto my-8 h-28"
+                src="./images/simulado/participacao1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="bg-amber-50">
       <!-- Container -->
-      <div class="container max-w-6xl py-10 mx-auto">
+      <div class="container mx-auto max-w-6xl py-10">
         <!-- Footer flex container -->
-        <div class="flex flex-col items-center mb-8 space-y-3 md:flex-row md:space-y-0 md:justify-between md:items-start">
+        <div
+          class="mb-8 flex flex-col items-center space-y-3 md:flex-row md:items-start md:justify-between md:space-y-0"
+        >
           <!-- Menu & Logo container -->
-          <div class="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
+          <div
+            class="flex flex-col items-center space-y-8 md:items-start md:space-y-4"
+          >
             <!-- Logo -->
             <div class="flex items-center justify-center md:mx-auto">
-              <img class="md:h-8 h-20" src="./logo/logo.png" alt="" class="w-44 md:ml-3" />
-              <h1 class="hidden md:block font-semibold md:text-xl text-cor-secundaria ml-4">
-                <a href="./index.html">Profª. Sebastiana Valdiria </a>
+              <img
+                class="h-20 md:h-8"
+                src="./logo/logo.png"
+                alt=""
+                class="w-44 md:ml-3"
+              />
+              <h1
+                class="ml-4 hidden font-semibold text-cor-secundaria md:block md:text-xl"
+              >
+                <a href="#inicio">Profª. Sebastiana Valdiria </a>
               </h1>
             </div>
             <!-- Menu container -->
-            <div class="flex flex-col items-center space-y-4 font-bold text-cor-primaria md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
+            <div
+              class="flex flex-col items-center space-y-4 font-bold text-cor-primaria md:ml-3 md:flex-row md:space-x-6 md:space-y-0"
+            >
               <!-- Item 1 -->
-              <div class="h-10 group">
-                <a href="/blog.html">Blog</a>
-                <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              <div class="group h-10">
+                <a href="#blog">Blog</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-cor-primaria"
+                ></div>
               </div>
               <!-- Item 2 -->
-              <div class="h-10 group">
-                <a href="/simulado.html">Simulado</a>
-                <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              <div class="group h-10">
+                <a href="./simulados.html">Simulado</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-cor-primaria"
+                ></div>
               </div>
               <!-- Item 3 -->
-              <div class="h-10 group">
-                <a href="/galeria.html">Galeria</a>
-                <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              <div class="group h-10">
+                <a href="#galeria">Galeria</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-cor-primaria"
+                ></div>
               </div>
               <!-- Item 4 -->
-              <div class="h-10 group">
-                <a href="/galeria.html">Equipe</a>
-                <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              <div class="group h-10">
+                <a href="#equipe">Equipe</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-cor-primaria"
+                ></div>
               </div>
               <!-- Item 5 -->
-              <div class="h-10 group">
-                <a href="/contato.html">Contato</a>
-                <div class="mx-2 group-hover:border-b group-hover:border-cor-primaria"></div>
+              <div class="group h-10">
+                <a href="#contato">Contato</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-cor-primaria"
+                ></div>
               </div>
             </div>
           </div>
           <!-- Social & Copy Container -->
-          <div class="flex flex-col items-start justify-between space-y-4 text-gray-500 mt-10">
+          <div
+            class="mt-10 flex flex-col items-start justify-between space-y-4 text-gray-500"
+          >
             <!-- Icons container -->
-            <div class="flex items-center mx-auto md:mx-0 justify-center space-x-4 md:justify-end">
+            <div
+              class="mx-auto flex items-center justify-center space-x-4 md:mx-0 md:justify-end"
+            >
               <!-- Icon 1 -->
-              <div class="h-8 group">
+              <div class="group h-8">
                 <img src="./icons/facebook.svg" alt="" class="h-6" />
               </div>
               <!-- Icon 2 -->
-              <div class="h-8 group">
+              <div class="group h-8">
                 <img src="./icons/instagram.svg" alt="" class="h-6" />
               </div>
               <!-- Icon 3 -->
-              <div class="h-8 group">
+              <div class="group h-8">
                 <img src="./icons/whatsapp.svg" alt="" class="h-6" />
               </div>
               <!-- Icon 4 -->
-              <div class="h-8 group">
+              <div class="group h-8">
                 <img src="./icons/twitter.svg" alt="" class="h-6" />
               </div>
             </div>
             <!-- Copyright -->
-            <div class="font-bold">&copy; 2023 César. Todos os direitos reservados</div>
+            <div class="font-bold">
+              &copy; 2023 César. Todos os direitos reservados
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 const renderGaleria = () => {
-  return `    <section class="bg-gradient-to-r from-amber-50 to-amber-100" id="blog">
+  return `      <section class="bg-gradient-to-r from-amber-50 to-amber-100" id="blog">
         <!-- Título -->
         <div
           class="mt-5 border-4 border-b-2 border-cor-primaria p-5 md:mt-20 md:p-20"
@@ -32,7 +32,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/mariacristina.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -84,7 +84,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/marli.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -176,7 +176,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="/profiles/angela.jpeg"
+                        src="/profiles/angela.jpg"
                         alt="alt text"
                       />
                     </div>
@@ -202,7 +202,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/cesarrocha.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -228,7 +228,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/clelia.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -306,7 +306,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/joaoricardo.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -332,7 +332,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/lilian.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -384,7 +384,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/lucinete.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -462,7 +462,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="/profiles/valeria.jpg"
+                        src="/profiles/silvana.jpg"
                         alt="alt text"
                       />
                     </div>
@@ -488,7 +488,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/simonehermogenes.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -566,7 +566,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/cesarnunes.jpeg"
                         alt="John alt text"
                       />
                     </div>
@@ -618,7 +618,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/elaine.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -644,7 +644,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/elizama.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -748,7 +748,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/roseli.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -788,7 +788,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/eliandro.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -840,7 +840,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/celeide.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -866,7 +866,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/karem.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -892,7 +892,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/sandra.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -918,7 +918,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/sumara.jpg"
                         alt="alt text"
                       />
                     </div>
@@ -970,7 +970,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="/profiles/camila.jpeg"
+                        src="/profiles/camila.jpg"
                         alt="alt text"
                       />
                     </div>
@@ -996,7 +996,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/tatiana.jpeg"
                         alt="alt text"
                       />
                     </div>
@@ -1022,7 +1022,7 @@ const renderGaleria = () => {
                     <div class="photo-wrapper p-2">
                       <img
                         class="mx-auto h-32 w-32 rounded-full"
-                        src="https://as2.ftcdn.net/v2/jpg/01/12/82/65/1000_F_112826560_2SsM6Em28EnqFht4xG1TMNtw8ot2fShY.jpg"
+                        src="/profiles/joelma.jpeg"
                         alt="alt text"
                       />
                     </div>
