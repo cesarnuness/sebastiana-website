@@ -51,6 +51,9 @@ function handleHashChange() {
     default:
       renderContent(renderInicio()); // Handle unknown hash
   }
+
+  // Scroll to the top of the page
+  window.scrollTo(0, 0);
 }
 
 // Initial content rendering based on the current hash
