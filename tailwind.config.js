@@ -2,9 +2,11 @@
 export default {
   content: [
     "./index.html",
+    "./*.{js,ts,jsx,tsx, mjs}",
+    "./public/*.{js,ts,jsx,tsx, mjs}",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./*.html",
-    "./views/*.{js,ts,jsx,tsx}",
+    "./views/*.{js,ts,jsx,tsx, mjs}",
   ],
   theme: {
     extend: {

@@ -1,4 +1,4 @@
-const renderIndex = () => {
+const renderInicio = () => {
   return `    <section id="hero">
       <img
         class="mx-auto hidden h-fit w-screen lg:flex"
@@ -36,4 +36,4 @@ const renderIndex = () => {
     </section>`;
 };
 
-export default renderIndex;
+export default renderInicio;

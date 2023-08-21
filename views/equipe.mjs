@@ -1,5 +1,5 @@
-const renderGaleria = () => {
-  return `      <section class="bg-gradient-to-r from-amber-50 to-amber-100" id="blog">
+const renderEquipe = () => {
+  return `      <section class="bg-gradient-to-r from-amber-50 to-amber-100" id="equipe">
         <!-- Título -->
         <div
           class="mt-5 border-4 border-b-2 border-cor-primaria p-5 md:mt-20 md:p-20"
@@ -1047,4 +1047,4 @@ const renderGaleria = () => {
       </section>`;
 };
 
-export default renderGaleria;
+export default renderEquipe;
