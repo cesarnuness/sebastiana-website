@@ -49,9 +49,7 @@ function handleHashChange() {
       renderContent(renderInicio());
       break;
     default:
-      renderContent(
-        `<h1 class="text-center my-12 text-2xl text-red-500 font-bold" > Em construção</h1>`,
-      ); // Handle unknown hash
+      renderContent(renderInicio()); // Handle unknown hash
   }
 }
 
