@@ -1,7 +1,7 @@
 const renderContato = () => {
   return `      <section id="contato" class="mx-auto mb-10 max-w-2xl">
         <div class="flex justify-center md:justify-start md:pl-10">
-          <h2 class="block text-2xl font-bold text-red-800">Horários</h2>
+          <h2 class="mt-4 text-2xl font-bold text-red-800">Horários</h2>
         </div>
         <div
           class="mx-auto flex flex-col items-center justify-center gap-6 bg-amber-50 md:flex-row md:items-start md:justify-evenly"
